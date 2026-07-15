@@ -1,0 +1,40 @@
+# --- Environment files (never commit real secrets) ---
+.env
+.env.local
+.env.*.local
+!*.env.example
+!.env.local.example
+
+# --- Node / Next.js (frontend) ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/next-env.d.ts
+frontend/*.tsbuildinfo
+frontend/npm-debug.log*
+frontend/.vercel
+
+# --- Laravel / PHP (backend) ---
+backend/vendor/
+backend/node_modules/
+backend/storage/*.key
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/testing/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+!backend/storage/framework/cache/.gitignore
+!backend/storage/framework/sessions/.gitignore
+!backend/storage/framework/testing/.gitignore
+!backend/storage/framework/views/.gitignore
+!backend/storage/logs/.gitignore
+backend/bootstrap/cache/*.php
+backend/public/hot
+backend/public/storage
+backend/.phpunit.result.cache
+
+# --- OS / editor noise ---
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
